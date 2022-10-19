@@ -1,0 +1,26 @@
+<?php
+class product_image
+{
+    var $id;
+    var $url;
+    var $product_id;
+    var $created_at;
+    var $modified_at;
+    var $deleted_at;
+
+    function product_image(
+        $_id,
+        $_url,
+        $_product_id,
+        $_created_at,
+        $_modified_at,
+        $_deleted_at
+    ) {
+        $this->id = $_id;
+        $this->url = $_url;
+        $this->product_id = $_product_id;
+        $this->created_at = $_created_at;
+        $this->modified_at = $_modified_at;
+        $this->deleted_at = $_deleted_at;
+    }
+}
