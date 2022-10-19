@@ -1,7 +1,7 @@
 <?php
 require_once("models/models.php");
 
-class productController
+class detailController
 {
     protected models $models;
 
@@ -10,11 +10,10 @@ class productController
         $this->models = new models($db);
     }
 
-    public function invoke()
+    public function invoke(&$prod)
     {
-        if (!isset($_GET["id"])) {
-            $prods = $this->models->productModel->all();
-            include_once("views/productList.php");
+        if (isset($_GET["id"])) {
+            $prod = $this->models->productModel->get($_GET["id"]);
         }
     }
 }

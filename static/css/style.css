@@ -6,3 +6,43 @@ a {
 a:hover {
   color: #088a08;
 }
+
+.mt-5 {
+  margin-top: 1.75rem !important
+}
+
+.mt-6 {
+  margin-top: 2rem !important
+}
+
+.mt-7 {
+  margin-top: 2.25rem !important
+}
+
+.mt-8 {
+  margin-top: 2.5rem !important
+}
+
+.my-5 {
+  margin-bottom: 1.75rem !important;
+  margin-top: 1.75rem !important
+}
+
+.my-6 {
+  margin-bottom: 2rem !important;
+  margin-top: 2rem !important
+}
+
+.my-7 {
+  margin-bottom: 2.25rem !important;
+  margin-top: 2.25rem !important
+}
+
+.my-8 {
+  margin-bottom: 2.5rem !important;
+  margin-top: 2.5rem !important
+}
+
+table {
+  border-collapse: collapse;
+}
