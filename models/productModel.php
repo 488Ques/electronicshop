@@ -61,15 +61,15 @@ class productModel
         return $prods;
     }
 
-    public function insert(product $prod)
+    public function insert($name, $description, $price, $quantity, $category_id, $discount_id)
     {
         $stmt = $this->db->prepare('INSERT INTO product(name, description, price, quantity, category_id, discount_id) VALUES (?, ?, ?, ?, ?, ?);');
-        $stmt->bind_param('ssiiii', $prod->name, $prod->description, $prod->price, $prod->quantity, $prod->category_id, $prod->discount_id);
+        $stmt->bind_param('ssiiii', $name, $description, $price, $quantity, $category_id, $discount_id);
         $stmt->execute();
         $stmt->close();
     }
 
-    public function update(product $prod)
+    public function update($id, $name, $description, $price, $quantity, $category_id, $discount_id)
     {
         $stmt = $this->db->prepare('
         UPDATE product SET
@@ -80,7 +80,7 @@ class productModel
         category_id = ?,
         discount_id = ?
         WHERE id = ?');
-        $stmt->bind_param('ssiiiii', $prod->name, $prod->description, $prod->price, $prod->quantity, $prod->category_id, $prod->discount_id, $prod->id);
+        $stmt->bind_param('ssiiiii', $name, $description, $price, $quantity, $category_id, $discount_id, $id);
         $stmt->execute();
         $stmt->close();
     }
