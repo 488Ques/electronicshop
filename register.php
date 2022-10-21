@@ -1,10 +1,6 @@
 <?php
-// Check whether the URL parameter exists
-// Return it if it does, otherwise returns empty string
-function getURLParameter($parameter)
-{
-    return (!empty($_GET[$parameter])) ? $_GET[$parameter] : '';
-}
+require_once('./include_path.php');
+require_once(DIR_MODULES . 'helpers.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,18 +8,18 @@ function getURLParameter($parameter)
 
 <?php
 $title = 'Đăng kí';
-include_once("views/head.php");
+include_once(DIR_VIEWS . 'head.php');
 ?>
 
 <body>
     <?php
-    include_once("views/header.php");
+    include_once(DIR_VIEWS . 'header.php');
     ?>
 
     <section class="container mt-4 w-25">
-        <?php include_once("views/msg.php"); ?>
+        <?php include_once(DIR_VIEWS . 'msg.php'); ?>
 
-        <form action="/modules/register.php" method="POST">
+        <form action="/controllers/register.php" method="POST">
             <div class="mb-3">
                 <label class="form-label">Username <span class="text-danger fw-bold">*</span></label>
                 <input type="text" class="form-control" name="username" value="<?php echo getURLParameter('username') ?>">
@@ -52,7 +48,7 @@ include_once("views/head.php");
         </form>
     </section>
 
-    <?php include_once("views/scripts.php"); ?>
+    <?php include_once(DIR_VIEWS . 'scripts.php'); ?>
 </body>
 
 </html>

@@ -1,21 +1,12 @@
 <?php
 // TODO Maybe make this a controller?
-require_once('./validators.php');
-require_once('./db_module.php');
-require_once('../models/userModel.php');
+require_once('../include_path.php');
+require_once(DIR_MODULES . 'validators.php');
+require_once(DIR_MODULES . 'db_module.php');
+require_once(DIR_MODELS . 'userModel.php');
+require_once(DIR_MODULES . 'helpers.php');
 
 $userModel = new userModel(newDB());
-
-// TODO Move this function into a helper.php module
-function empties(...$fields)
-{
-    foreach ($fields as $field) {
-        if (empty($field)) {
-            return true;
-        }
-    }
-    return false;
-}
 
 $username = $_POST['username'];
 $password = $_POST['password'];

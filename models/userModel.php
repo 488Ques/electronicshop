@@ -1,5 +1,7 @@
 <?php
-require_once('DTOs/user.php');
+require_once('../include_path.php');
+require_once(DIR_DTOS . 'user.php');
+
 class userModel
 {
     protected mysqli $db;
