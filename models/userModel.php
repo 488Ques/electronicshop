@@ -11,7 +11,7 @@ class userModel
         $this->db = $db;
     }
 
-    public function insert($username, $password, $first_name, $last_name, $email_address)
+    public function insert(string $username, string $password, ?string $first_name, ?string $last_name, string $email_address)
     {
         $stmt = $this->db->prepare('INSERT INTO user(username, password, first_name, last_name, email_address) VALUES (?, PASSWORD(?), ?, ?, ?);');
         $stmt->bind_param('sssss', $username, $password, $first_name, $last_name, $email_address);
@@ -19,7 +19,7 @@ class userModel
         $stmt->close();
     }
 
-    public function get($username)
+    public function get(string $username): user
     {
         $stmt = $this->db->prepare('SELECT * FROM user WHERE username = ? AND deleted_at IS NULL');
         $stmt->bind_param('s', $username);
@@ -42,7 +42,19 @@ class userModel
         );
     }
 
-    public function exist($username)
+    public function login(string $username, string $password): bool
+    {
+        $stmt = $this->db->prepare('SELECT COUNT(*) FROM user WHERE username = ? AND password = PASSWORD(?) AND deleted_at IS NULL');
+        $stmt->bind_param('ss', $username, $password);
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+        $stmt->close();
+
+        return $result->num_rows > 0;
+    }
+
+    public function exist(string $username): bool
     {
         $stmt = $this->db->prepare('SELECT id FROM user WHERE username = ?');
         $stmt->bind_param('s', $username);
@@ -51,6 +63,6 @@ class userModel
         $result = $stmt->get_result();
         $stmt->close();
 
-        return mysqli_num_rows($result) > 0;
+        return $result->num_rows > 0;
     }
 }

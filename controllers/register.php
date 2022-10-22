@@ -1,5 +1,4 @@
 <?php
-// TODO Maybe make this a controller?
 require_once('../include_path.php');
 require_once(DIR_MODULES . 'validators.php');
 require_once(DIR_MODULES . 'db_module.php');

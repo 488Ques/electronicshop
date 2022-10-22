@@ -17,5 +17,11 @@ if (!empty($msg)) {
         case 'duplicate':
             echo (displayAlert('Username đã tồn tại, xin vui lòng chọn username khác', 'alert-warning'));
             break;
+        case 'login-success':
+            echo (displayAlert('Đăng nhập thành công!', 'alert-success'));
+            break;
+        case 'login-fail':
+            echo (displayAlert('Đăng nhập thất bại', 'alert-danger'));
+            break;
     }
 }
