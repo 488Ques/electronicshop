@@ -3,15 +3,11 @@ require_once("config.php");
 
 function newDB()
 {
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-    $db = null;
-    try {
-        $db = new mysqli(HOST, USERNAME, PASSWORD, DB);
-        $db->set_charset("utf8mb4");
-    } catch (Exception $e) {
-        error_log($e->getMessage());
-        exit('Error connecting to database');
-    }
-
-    return $db;
+    $dsn = sprintf('mysql:host=%s;dbname=%s;charset=%s', HOST, DB, CHARSET);
+    $options = [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,
+    ];
+    return new PDO($dsn, USERNAME, PASSWORD, $options);
 }

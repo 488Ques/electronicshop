@@ -56,8 +56,6 @@
         <!-- Product name, description, order button, ... -->
         <div class="col-md-7 col-12">
             <div class="ps-lg-10 mt-6 mt-md-0">
-                <a href="#!" class="mb-4 d-block">Điện thoại thông minh</a>
-
                 <h1 class="mb-1 fw-semibold"><?php echo $prod->name ?></h1>
 
                 <div class="fs-4">
@@ -68,11 +66,6 @@
                 </div>
 
                 <hr class="my-6">
-
-                <div>
-                    <label for="quantity" class="form-label">Số lượng</label>
-                    <input type="number" step="1" min="1" value="1" name="quantity" class="form-control w-25">
-                </div>
 
                 <div class="mt-6 row justify-content-start gap-2 align-items-center">
                     <div class="col-md-4 col-12 d-grid">
@@ -110,11 +103,6 @@
                             <tr>
                                 <td>Tên sản phẩm</td>
                                 <td><?php echo ($prod->name); ?></td>
-                            </tr>
-
-                            <tr>
-                                <td>Tình trạng tồn kho</td>
-                                <td>Còn hàng</td>
                             </tr>
                         </tbody>
                     </table>

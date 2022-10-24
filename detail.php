@@ -1,28 +1,12 @@
 <?php
-include_once("controllers/detailController.php");
-require_once("modules/db_module.php");
+require_once('./include_path.php');
+require_once(DIR_CONTROLLERS . 'detail.ctl.php');
 
-$db = newDB();
-$detailController = new detailController($db);
 $prod;
-$detailController->invoke($prod);
-?>
+$detail = new detail();
+$detail->invoke($prod);
 
-<!DOCTYPE html>
-<html lang="en">
-
-<?php
 $title = $prod->name;
-include_once("views/head.php");
-?>
+$template = DIR_VIEWS . 'detail.tmpl.php';
 
-<body>
-  <?php
-  include_once("views/header.php");
-  include_once("views/productDetail.php");
-  ?>
-
-  <?php include_once("views/scripts.php"); ?>
-</body>
-
-</html>
+require_once(DIR_VIEWS . 'layout.php');
