@@ -7,6 +7,7 @@ class product
     var $price;
     var $category_id;
     var $discount_id;
+    var $specs_id;
     var $created_at;
     var $modified_at;
     var $deleted_at;
@@ -18,6 +19,7 @@ class product
         $_price,
         $_category_id,
         $_discount_id,
+        $_specs_id,
         $_created_at,
         $_modified_at,
         $_deleted_at
@@ -28,14 +30,9 @@ class product
         $this->price = $_price;
         $this->category_id = $_category_id;
         $this->discount_id = $_discount_id;
+        $this->specs_id = $_specs_id;
         $this->created_at = $_created_at;
         $this->modified_at = $_modified_at;
         $this->deleted_at = $_deleted_at;
-    }
-
-    public function __toString()
-    {
-        return "Product(id = $this->id, name = $this->name, price = $this->price, 
-        quantity = $this->quantity, category_id = $this->category_id)";
     }
 }

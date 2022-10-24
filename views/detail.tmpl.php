@@ -23,7 +23,7 @@
             <div id="productSlide" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/static/image/galaxy_z_flip4_bespoke_studio/0.png" class="img-fluid d-block w-100">
+                        <img src="/static/image/galaxy_z_flip4_bespoke_studio/0.png" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
                         <img src="/static/image/galaxy_z_flip4_bespoke_studio/1.png" class="d-block w-100">
@@ -56,7 +56,7 @@
         <!-- Product name, description, order button, ... -->
         <div class="col-md-7 col-12">
             <div class="ps-lg-10 mt-6 mt-md-0">
-                <h1 class="mb-1 fw-semibold"><?php echo $prod->name ?></h1>
+                <h2 class="mb-1 fw-semibold"><?php echo $prod->name ?></h1>
 
                 <div class="fs-4">
                     <span class="fw-bold text-dark"><?php echo (number_format($prod->price) . " VNĐ"); ?></span>
@@ -65,7 +65,7 @@
             <span><small class="fs-6 ms-2 text-danger">26% Off</small></span> -->
                 </div>
 
-                <hr class="my-6">
+                <!-- <hr class="my-6"> -->
 
                 <div class="mt-6 row justify-content-start gap-2 align-items-center">
                     <div class="col-md-4 col-12 d-grid">
@@ -101,8 +101,48 @@
                     <table class="table table-borderless">
                         <tbody>
                             <tr>
-                                <td>Tên sản phẩm</td>
-                                <td><?php echo ($prod->name); ?></td>
+                                <td>Model</td>
+                                <td><?php echo ($specsJSON['model']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Màu sắc</td>
+                                <td><?php echo ($specsJSON['color']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Nhà sản xuất</td>
+                                <td><?php echo ($specsJSON['manufacturer']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Xuất xứ</td>
+                                <td><?php echo ($specsJSON['origin']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Thời gian bảo hành</td>
+                                <td><?php echo ($specsJSON['warranty_time']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Bộ nhớ trong</td>
+                                <td><?php echo ($specsJSON['memory']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Loại màn hình</td>
+                                <td><?php echo ($specsJSON['monitor']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Kích thước màn hình</td>
+                                <td><?php echo ($specsJSON['monitor_size']); ?></td>
+                            </tr>
+
+                            <tr>
+                                <td>Độ phân giải màn hình</td>
+                                <td><?php echo ($specsJSON['resolution']); ?></td>
                             </tr>
                         </tbody>
                     </table>
