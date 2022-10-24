@@ -5,7 +5,6 @@ class product
     var $name;
     var $description;
     var $price;
-    var $quantity;
     var $category_id;
     var $discount_id;
     var $created_at;
@@ -17,7 +16,6 @@ class product
         $_name,
         $_description,
         $_price,
-        $_quantity,
         $_category_id,
         $_discount_id,
         $_created_at,
@@ -28,7 +26,6 @@ class product
         $this->name = $_name;
         $this->description = $_description;
         $this->price = $_price;
-        $this->quantity = $_quantity;
         $this->category_id = $_category_id;
         $this->discount_id = $_discount_id;
         $this->created_at = $_created_at;
