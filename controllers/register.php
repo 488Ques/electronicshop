@@ -2,7 +2,7 @@
 require_once('../include_path.php');
 require_once(DIR_MODULES . 'validators.php');
 require_once(DIR_MODULES . 'db_module.php');
-require_once(DIR_MODELS . 'userModel.php');
+require_once(DIR_MODELS . 'user.model.php');
 require_once(DIR_MODULES . 'helpers.php');
 
 $userModel = new userModel(newDB());
