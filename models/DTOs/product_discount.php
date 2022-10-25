@@ -8,7 +8,7 @@ class product_discount
     var $modified_at;
     var $deleted_at;
 
-    function product_discount(
+    function __construct(
         $_id,
         $_name,
         $_discount_percent,

@@ -11,7 +11,7 @@ class user
     var $modified_at;
     var $deleted_at;
 
-    function user(
+    function __construct(
         $_id,
         $_username,
         $_password,

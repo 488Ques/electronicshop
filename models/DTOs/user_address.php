@@ -8,7 +8,7 @@ class user_address
     var $postal_code;
     var $country;
 
-    function user_address(
+    function __construct(
         $_id,
         $_user_id,
         $_address_line,

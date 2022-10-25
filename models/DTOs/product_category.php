@@ -9,7 +9,7 @@ class product_category
     var $modified_at;
     var $deleted_at;
 
-    function product_category(
+    function __construct(
         $_id,
         $_name,
         $_description,

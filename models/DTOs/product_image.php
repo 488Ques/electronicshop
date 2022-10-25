@@ -8,7 +8,7 @@ class product_image
     var $modified_at;
     var $deleted_at;
 
-    function product_image(
+    function __construct(
         $_id,
         $_url,
         $_product_id,

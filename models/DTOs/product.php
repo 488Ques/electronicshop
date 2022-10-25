@@ -12,7 +12,7 @@ class product
     var $modified_at;
     var $deleted_at;
 
-    public function __construct(
+    function __construct(
         $_id,
         $_name,
         $_description,

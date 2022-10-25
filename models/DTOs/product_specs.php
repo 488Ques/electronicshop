@@ -7,8 +7,7 @@ class product_specs
     var $modified_at;
     var $deleted_at;
 
-    function __construct
-    (
+    function __construct(
         $_id,
         $_specs,
         $_created_at,
