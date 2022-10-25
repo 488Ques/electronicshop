@@ -4,8 +4,9 @@ require_once(DIR_CONTROLLERS . 'detail.ctl.php');
 
 $prod;
 $specs;
+$images;
 $detail = new detail();
-$detail->invoke($prod, $specs);
+$detail->invoke($prod, $specs, $images);
 
 $specsJSON = json_decode($specs->specs, true);
 
