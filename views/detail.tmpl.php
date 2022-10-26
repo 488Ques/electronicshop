@@ -30,6 +30,7 @@
 
                     foreach ($images as $i => $image) {
                         // Only put 'active' CSS class on the first carousel item
+                        // so the carousel can work properly
                         echo (sprintf($carouselItem, $i == 0 ? 'active' : '', $image['url']));
                     }
                     ?>
