@@ -5,7 +5,7 @@ require_once(DIR_MODELS . 'product.model.php');
 require_once(DIR_MODELS . 'product_specs.model.php');
 require_once(DIR_MODELS . 'product_image.model.php');
 
-class detail
+class detailController
 {
     protected productModel $productModel;
     protected productSpecsModel $productSpecsModel;
