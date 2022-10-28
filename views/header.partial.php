@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="/">TIENTRIS</a>
@@ -53,10 +57,27 @@
                         <i class="bi bi-cart-fill" style="font-size: 25px;"></i>
                     </a>
                 </li>
-                <li class="nav-item">
+
+                <li class="nav-item dropdown">
                     <a class="nav-link" href="#">
-                        <i class="bi bi-person-circle" style="font-size: 25px;"></i>
+                        <i class="bi bi-person-circle me-1" style="font-size: 25px;"></i>
+                        <?php
+                        if (!empty($_SESSION['username'])) {
+                            echo $_SESSION['username'];;
+                        }
+                        ?>
                     </a>
+
+                    <ul class="dropdown-menu">
+                        <?php
+                        if (!empty($_SESSION['username'])) {
+                            echo '<li><a class="dropdown-item" href="/controllers/logout.php">Đăng xuất</a></li>';
+                        } else {
+                            echo '<li><a class="dropdown-item" href="/login.php">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="/register.php">Đăng kí</a></li>';
+                        }
+                        ?>
+                    </ul>
                 </li>
             </ul>
         </div>

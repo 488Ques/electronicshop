@@ -1,16 +1,11 @@
 <?php
-require_once('./include_path.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
 require_once(DIR_MODULES . 'helpers.php');
 ?>
 
 <section class="container mt-4 w-25">
-    <!-- For debug only, remove this and replace with redirecting to home page in production -->
     <?php
     include_once(DIR_VIEWS . 'msg.php');
-    session_start();
-    if (!empty($_SESSION['username'])) {
-        echo ('Username hiện tại là ' . $_SESSION['username']);
-    }
     ?>
 
     <form action="/controllers/login.php" method="POST">
