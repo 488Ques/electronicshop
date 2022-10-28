@@ -6,7 +6,7 @@ require_once(DIR_MODULES . 'helpers.php');
 <section class="container mt-4 w-25">
     <?php include_once(DIR_VIEWS . 'msg.php'); ?>
 
-    <form action="/controllers/register.php" method="POST">
+    <form action="/controllers/register.ctl.php" method="POST">
         <div class="mb-3">
             <label class="form-label">Username <span class="text-danger fw-bold">*</span></label>
             <input type="text" class="form-control" name="username" value="<?php echo getURLParameter('username') ?>">

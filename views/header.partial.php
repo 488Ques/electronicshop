@@ -58,6 +58,7 @@ session_start();
                     </a>
                 </li>
 
+                <!-- User login/register/logout -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#">
                         <i class="bi bi-person-circle me-1" style="font-size: 25px;"></i>
@@ -71,7 +72,7 @@ session_start();
                     <ul class="dropdown-menu">
                         <?php
                         if (!empty($_SESSION['username'])) {
-                            echo '<li><a class="dropdown-item" href="/controllers/logout.php">Đăng xuất</a></li>';
+                            echo '<li><a class="dropdown-item" href="/controllers/logout.ctl.php">Đăng xuất</a></li>';
                         } else {
                             echo '<li><a class="dropdown-item" href="/login.php">Đăng nhập</a></li>
                             <li><a class="dropdown-item" href="/register.php">Đăng kí</a></li>';
