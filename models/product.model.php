@@ -23,7 +23,6 @@ class productModel
             $product['name'],
             $product['description'],
             $product['price'],
-            $product['category_id'],
             $product['discount_id'],
             $product['specs_id'],
             $product['created_at'],
