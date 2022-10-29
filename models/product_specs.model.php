@@ -11,7 +11,7 @@ class productSpecsModel
         $this->db = $db;
     }
 
-    public function get(int $id): product_specs
+    public function get($id): product_specs
     {
         $stmt = $this->db->prepare('SELECT * FROM product_specs WHERE id = ? AND deleted_at IS NULL;');
         $stmt->execute([$id]);

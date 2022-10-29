@@ -4,9 +4,9 @@ require_once(DIR_DTOS . 'product_image.php');
 
 class productImageModel
 {
-    protected pdo $db;
+    protected $db;
 
-    public function __construct(pdo $db)
+    public function __construct($db)
     {
         $this->db = $db;
     }

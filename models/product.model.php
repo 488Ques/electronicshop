@@ -1,18 +1,20 @@
 <?php
-require_once("DTOs/product.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
+require_once(DIR_DTOS . "product.php");
 
 class productModel
 {
-    protected pdo $db;
+    protected $db;
 
-    public function __construct(pdo $db)
+    public function __construct($db)
     {
         $this->db = $db;
     }
 
-    public function get(int $id)
+    public function get($id)
     {
-        $stmt = $this->db->prepare('SELECT * FROM product WHERE id = ? AND deleted_at IS NULL;');
+        $stmt = $this->db->prepare('SELECT id, name, description, price, discount_id, specs_id, created_at, modified_at, deleted_at
+         FROM product WHERE id = ? AND deleted_at IS NULL;');
 
         $stmt->execute([$id]);
 
@@ -42,7 +44,7 @@ class productModel
                 break;
             }
             $stmt = $stmt . '?, ';
-}
+        }
 
         $prepared = $this->db->prepare($stmt);
         $prepared->execute($ids);
