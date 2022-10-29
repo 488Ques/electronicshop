@@ -30,8 +30,39 @@ class productModel
             $product['deleted_at'],
         );
     }
+
+    // Return all products whose ID belongs to $ids
+    public function matchAll($ids)
+    {
+        $stmt = 'SELECT id, name, description, price, discount_id, specs_id, created_at, modified_at, deleted_at 
+        FROM product WHERE id IN (';
+        for ($i = 0; $i < count($ids); $i++) {
+            if ($i == count($ids) - 1) {
+                $stmt = $stmt . '?);';
+                break;
+            }
+            $stmt = $stmt . '?, ';
 }
-    // SELECT * FROM product WHERE deleted_at IS NULL; -> ALL
-    // INSERT INTO product(name, description, price, quantity, category_id, discount_id) VALUES (?, ?, ?, ?, ?, ?); -> INSERT
-    // UPDATE product SET name = ?, description = ?, price = ?, quantity = ?, category_id = ?, discount_id = ? WHERE id = ?; -> UPDATE
-    // UPDATE product SET deleted_at = NOW() WHERE id = ?; -> DELETE
+
+        $prepared = $this->db->prepare($stmt);
+        $prepared->execute($ids);
+
+        $products = array();
+        while ($temp = $prepared->fetch()) {
+            $prod = new product(
+                $temp['id'],
+                $temp['name'],
+                $temp['description'],
+                $temp['price'],
+                $temp['discount_id'],
+                $temp['specs_id'],
+                $temp['created_at'],
+                $temp['modified_at'],
+                $temp['deleted_at'],
+            );
+            array_push($products, $prod);
+        }
+
+        return $products;
+    }
+}
