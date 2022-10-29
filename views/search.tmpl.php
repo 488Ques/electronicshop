@@ -5,77 +5,95 @@ require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
 <div class="container">
     <div class="row gx-10 mt-4">
         <aside class="col-lg-3 col-md-4 mb-6 mb-md-0">
-            <div class="mb-8">
-                <h5 class="mb-3">Stores</h5>
-                <div class="my-4">
-                    <!-- input -->
-                    <input type="search" class="form-control" placeholder="Search by store">
+            <form action="">
+                <div>
+                    <input class="form-control" type="text" placeholder="Nhập tên sản phẩm" name='product_name'>
                 </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="eGrocery" checked="">
-                    <label class="form-check-label" for="eGrocery">
-                        E-Grocery
-                    </label>
+
+                <div class="accordion accordion-flush my-2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                Tags
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <?php
+                                $checkbox = '
+                                <div>
+                                    <input class="form-check-input" type="checkbox" name="tag[]" value="%s">
+                                    <label class="form-check-label">
+                                        %s
+                                    </label>
+                                </div>';
+
+                                foreach ($tags as $tag) {
+                                    echo sprintf($checkbox, $tag->id, $tag->name);
+                                }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="DealShare">
-                    <label class="form-check-label" for="DealShare">
-                        DealShare
-                    </label>
+
+                <div class="accordion accordion-flush my-2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Giá
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div>
+                                    <input class="form-check-input" type="radio" name="lower_price" value="2000000">
+                                    <label class="form-check-label">
+                                        Trên 2 triệu
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="radio" name="lower_price" value="3000000">
+                                    <label class="form-check-label">
+                                        Trên 3 triệu
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="radio" name="lower_price" value="5000000">
+                                    <label class="form-check-label">
+                                        Trên 5 triệu
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="radio" name="lower_price" value="10000000">
+                                    <label class="form-check-label">
+                                        Trên 10 triệu
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="radio" name="lower_price" value="20000000">
+                                    <label class="form-check-label">
+                                        Trên 20 triệu
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input class="form-check-input" type="radio" name="lower_price" value="30000000">
+                                    <label class="form-check-label">
+                                        Trên 30 triệu
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="Dmart">
-                    <label class="form-check-label" for="Dmart">
-                        DMart
-                    </label>
-                </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="Blinkit">
-                    <label class="form-check-label" for="Blinkit">
-                        Blinkit
-                    </label>
-                </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="BigBasket">
-                    <label class="form-check-label" for="BigBasket">
-                        BigBasket
-                    </label>
-                </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="StoreFront">
-                    <label class="form-check-label" for="StoreFront">
-                        StoreFront
-                    </label>
-                </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="Spencers">
-                    <label class="form-check-label" for="Spencers">
-                        Spencers
-                    </label>
-                </div>
-                <!-- form check -->
-                <div class="form-check mb-2">
-                    <!-- input -->
-                    <input class="form-check-input" type="checkbox" value="" id="onlineGrocery">
-                    <label class="form-check-label" for="onlineGrocery">
-                        Online Grocery
-                    </label>
-                </div>
-            </div>
+
+                <input class="btn btn-primary" type="submit" value="Tìm kiếm">
+            </form>
         </aside>
 
         <section class="col-lg-9 col-md-12">
