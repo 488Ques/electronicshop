@@ -20,4 +20,14 @@ class productImageModel
 
         return $result;
     }
+
+    public function getThumbnail($productID)
+    {
+        $stmt = $this->db->prepare('SELECT url FROM product_image WHERE product_id = ? AND is_thumbnail != 0');
+        $stmt->execute([$productID]);
+
+        $result = $stmt->fetch();
+
+        return $result['url'];
+    }
 }
