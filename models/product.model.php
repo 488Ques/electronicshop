@@ -67,4 +67,67 @@ class productModel
 
         return $products;
     }
+
+    // search() finds products that match all $tags, match partially $partialName and
+    // have price higher than $lowerPrice. If all null are passed, it returns all products.
+    public function search($tags, $partialName, $lowerPrice)
+    {
+        // SELECT prod.id, prod.name, prod.price FROM product prod WHERE prod.name LIKE %?% prod.price > ? AND prod.id IN 
+        // (SELECT map.product_id FROM producttag_map map WHERE map.tag_id = ? INTERSECT 
+        // SELECT map.product_id FROM producttag_map map WHERE map.tag_id = ?) AND 1; 
+
+        $stmt = '';
+        $args = array();
+
+        if (!empty($tags) || !empty($partialName) || !empty($lowerPrice)) {
+            $stmt = 'SELECT prod.id, prod.name, prod.price FROM product prod WHERE ';
+            if (!empty($partialName)) {
+                array_push($args, '%' . $partialName . '%'); // Match all product name containing $partialName
+                $stmt = $stmt . 'prod.name LIKE ? AND ';
+            }
+            if (!empty($lowerPrice)) {
+                array_push($args, $lowerPrice);
+                $stmt = $stmt . 'prod.price > ? AND ';
+            }
+
+            if (!empty($tags)) {
+                $args = array_merge($args, $tags);
+                $stmt = $stmt . 'prod.id IN (';
+                $tagsClause = '';
+                for ($i = 0; $i < count($tags); $i++) {
+                    if ($i == count($tags) - 1) {
+                        $tagsClause = $tagsClause . 'SELECT map.product_id FROM producttag_map map WHERE tag_id = ?';
+                        break;
+                    }
+                    $tagsClause = $tagsClause . 'SELECT map.product_id FROM producttag_map map WHERE tag_id = ? INTERSECT ';
+                }
+                $stmt = $stmt . $tagsClause . ') AND ';
+            }
+
+            $stmt = $stmt . '1;';
+        } else {
+            $stmt = 'SELECT prod.id, prod.name, prod.price FROM product prod;';
+        }
+
+        $prepared = $this->db->prepare($stmt);
+        $prepared->execute($args);
+
+        $products = array();
+        while ($temp = $prepared->fetch()) {
+            $prod = new product(
+                $temp['id'],
+                $temp['name'],
+                null,
+                $temp['price'],
+                null,
+                null,
+                null,
+                null,
+                null,
+            );
+            array_push($products, $prod);
+        }
+
+        return $products;
+    }
 }
