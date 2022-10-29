@@ -21,12 +21,11 @@ class searchController
 
     public function invoke(&$prods)
     {
-        if (!empty($_GET['tag'])) {
-            $tags = $_GET['tag']; // An array of tag ID numbers
-            $matchedProdIDs = $this->mapModel->matchTags($tags);
+        $tags = $_GET['tag']; // An array of tag ID numbers
+        $productName = $_GET['product_name'];
+        $lowerPrice = $_GET['lower_price'];
 
-            $prods = $this->prodModel->matchAll($matchedProdIDs);
-        }
+        $prods = $this->prodModel->search($tags, $productName, $lowerPrice);
     }
 
     public function getProductThumbnail($productID)
