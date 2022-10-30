@@ -98,50 +98,17 @@
                     <div>
                         <table class="table table-borderless">
                             <tbody>
+                                <?php
+                                $tableRow = '
                                 <tr>
-                                    <td>Model</td>
-                                    <td><?php echo ($specsJSON['model']); ?></td>
-                                </tr>
+                                    <td>%s</td>
+                                    <td>%s</td>
+                                </tr>';
 
-                                <tr>
-                                    <td>Màu sắc</td>
-                                    <td><?php echo ($specsJSON['color']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Nhà sản xuất</td>
-                                    <td><?php echo ($specsJSON['manufacturer']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Xuất xứ</td>
-                                    <td><?php echo ($specsJSON['origin']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Thời gian bảo hành</td>
-                                    <td><?php echo ($specsJSON['warranty_time']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Bộ nhớ trong</td>
-                                    <td><?php echo ($specsJSON['memory']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Loại màn hình</td>
-                                    <td><?php echo ($specsJSON['monitor']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Kích thước màn hình</td>
-                                    <td><?php echo ($specsJSON['monitor_size']); ?></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Độ phân giải màn hình</td>
-                                    <td><?php echo ($specsJSON['resolution']); ?></td>
-                                </tr>
+                                foreach ($specsJSON as $attr => $val) {
+                                    echo sprintf($tableRow, $attr, $val);
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>
