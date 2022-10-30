@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="/">TIENTRIS</a>
