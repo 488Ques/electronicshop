@@ -64,6 +64,14 @@ table {
   src: url(/static/font/SamsungSharpSans.ttf);
 }
 
+.font-SamsungOne {
+  font-family: SamsungOne;
+}
+
+.font-SamsungSharpSans {
+  font-family: SamsungSharpSans;
+}
+
 .navbar {
   background: whitesmoke;
   font-family: SamsungOne;
