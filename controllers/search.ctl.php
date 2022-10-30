@@ -36,4 +36,8 @@ class searchController
     {
         return $this->imageModel->getThumbnail($productID);
     }
+
+    public function getProductTagsName($prodID) {
+        return $this->tagModel->getProductTagsName($prodID);
+    }
 }

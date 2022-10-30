@@ -8,6 +8,21 @@
                 </a>
             </div>
 
+            <div class="text-muted mb-1">
+                <small>
+                    <?php
+                    $prodTags = $searchCtl->getProductTagsName($prod->id);
+                    foreach ($prodTags as $i => $tag) {
+                        if ($i == count($prodTags) - 1) {
+                            echo $tag->name;
+                            break;
+                        }
+                        echo $tag->name . ', ';
+                    }
+                    ?>
+                </small>
+            </div>
+
             <h2 class="fs-6">
                 <a href="<?php echo '/detail.php?id=' . $prod->id; ?>" class="text-decoration-none">
                     <?php echo $prod->name; ?>
