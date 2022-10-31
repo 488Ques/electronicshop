@@ -12,7 +12,7 @@
                         <h3 class="mb-2">
                             <a class="text-decoration-none" href="shop-single-v1.html">Điện thoại Samsung Galaxy A03 32GB Đen</a>
                         </h3>
-                        <div class="pt-2">2,990,000 VNĐ</div>
+                        <small class="pt-2 text-muted">2,990,000 VNĐ</small>
                     </div>
                 </div>
                 <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
