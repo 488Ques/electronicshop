@@ -21,6 +21,7 @@ class productImageModel
         return $result;
     }
 
+    // Return a string of a product's image URL marked as thumbnail
     public function getThumbnail($productID)
     {
         $stmt = $this->db->prepare('SELECT url FROM product_image WHERE product_id = ? AND is_thumbnail != 0');
