@@ -36,9 +36,18 @@
             </h2>
 
             <div>
-                <a href="#!" class="btn btn-primary btn-sm">
-                    <i class="bi bi-cart-plus"></i> Thêm
-                </a>
+                <form method="POST" action="/controllers/shoppingCart.ctl.php">
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        <i class="bi bi-cart-plus"></i> Thêm
+                    </button>
+
+                    <input type="hidden" value="add" name="action">
+                    <input type="hidden" value="<?php echo $prod->id; ?>" name="id">
+                    <input type="hidden" value="<?php echo $prod->name; ?>" name="name">
+                    <input type="hidden" value="<?php echo $prod->price; ?>" name="price">
+                    <input type="hidden" value="1" name="quantity">
+                    <input type="hidden" value="<?php echo $url; ?>" name="url">
+                </form>
             </div>
         </div>
     </div>
