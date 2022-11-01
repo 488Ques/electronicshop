@@ -1,3 +1,7 @@
+<?php
+require_once(DIR_MODULES . 'shoppingCart.php');
+?>
+
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="/">TIENTRIS</a>
@@ -34,9 +38,9 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="bi bi-cart-fill me-1" ></i>
-                        Giỏ hàng
+                    <a class="nav-link" href="/cart.php">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        Giỏ hàng (<?php echo sumProdCart() ? sumProdCart() : 0; ?>)
                     </a>
                 </li>
 
