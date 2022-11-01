@@ -78,7 +78,7 @@ function sumProdCart()
         foreach ($cart as $prod) {
             $sum += $prod['quantity'];
         }
-    }
 
-    return $sum;
+        return $sum;
+    }
 }
