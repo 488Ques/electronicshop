@@ -3,9 +3,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
 ?>
 
 <div class="container">
+    <!-- Filter options -->
     <div class="row gx-10 mt-4">
         <aside class="col-lg-3 col-md-4 mb-6 mb-md-0">
-            <form action="">
+            <form method="GET" action="/search.php">
                 <div>
                     <input class="form-control" type="text" placeholder="Nhập tên sản phẩm" name='product_name'>
                 </div>
@@ -96,6 +97,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
             </form>
         </aside>
 
+        <!-- Listing -->
         <section class="col-lg-9 col-md-12">
             <div class="row g-4 row-cols-xl-4 row-cols-lg-3 row-cols-2 row-cols-md-2 row-cols-sm-1 mt-2">
                 <?php
