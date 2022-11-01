@@ -27,4 +27,9 @@ class detailController
             $images = $this->productImageModel->getImages($prod->id);
         }
     }
+
+    public function getProductThumbnail($productID)
+    {
+        return $this->productImageModel->getThumbnail($productID);
+    }
 }

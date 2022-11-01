@@ -65,14 +65,22 @@
 
                     <!-- <hr class="my-6"> -->
 
-                    <div class="mt-6 row justify-content-start gap-2 align-items-center">
-                        <div class="col-md-4 col-12 d-grid">
-                            <button type="button" class="btn btn-primary">
-                                <i class="bi bi-cart me-2"></i>
+                    <div class="mt-6 row">
+                        <form class="col-md-4" method="POST" action="/controllers/shoppingCart.ctl.php">
+                            <button class="btn btn-primary w-100" type="submit">
+                                <i class="bi bi-cart-plus"></i>
                                 Thêm vào giỏ hàng
                             </button>
-                        </div>
 
+                            <input type="hidden" value="add" name="action">
+                            <input type="hidden" value="<?php echo $prod->id; ?>" name="id">
+                            <input type="hidden" value="<?php echo $prod->name; ?>" name="name">
+                            <input type="hidden" value="<?php echo $prod->price; ?>" name="price">
+                            <input type="hidden" value="1" name="quantity">
+                            <input type="hidden" value="<?php echo $detailController->getProductThumbnail($prod->id); ?>" name="url">
+                        </form>
+
+                        <!-- TODO Wishlist -->
                         <a class="col-md-1 col-12 btn btn-light" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist">
                             <i class="bi bi-heart"></i>
                         </a>
