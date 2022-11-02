@@ -1,5 +1,4 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
 session_start();
 ?>
 
