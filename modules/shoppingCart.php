@@ -82,3 +82,10 @@ function sumProdCart()
         return $sum;
     }
 }
+
+function emptyCart()
+{
+    if (!empty($_SESSION['cart'])) {
+        $_SESSION['cart'] = array();
+    }
+}
