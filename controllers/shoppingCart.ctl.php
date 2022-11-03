@@ -32,3 +32,5 @@ if (!empty($action)) {
             break;
     }
 }
+
+exit();
