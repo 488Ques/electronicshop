@@ -5,7 +5,7 @@
         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner darkened">
         <div class="carousel-item active">
             <img src="/static/image/index/1.webp" class="d-block w-100">
             <div class="carousel-caption">
@@ -45,7 +45,7 @@
 
 <div class="container">
     <div class="row mt-5">
-        <h2 class="list-product-title">Di động</h2>
+        <h2 class="list-product-title">Điện thoại</h2>
         <div class="product-group">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-12">
@@ -107,7 +107,7 @@
 
     <!-- end list product -->
     <div class="row mt-5">
-        <h2 class="list-product-title">TV & AV</h2>
+        <h2 class="list-product-title">Tablet</h2>
         <div class="product-group">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-12">

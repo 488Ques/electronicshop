@@ -151,7 +151,7 @@ table {
   border: 1px solid white;
 }
 
-.carousel-inner::before {
+.darkened::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -161,7 +161,6 @@ table {
   background: rgba(0, 0, 0, 0.40);
   z-index: 1;
 }
-
 
 @media (max-width: 992px) {
   .carousel-caption {
