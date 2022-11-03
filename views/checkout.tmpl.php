@@ -1,44 +1,45 @@
+<?php
+require_once(DIR_MODULES . 'shoppingCart.php');
+$cart = $_SESSION['cart'];
+?>
+
 <section class="container mt-5">
     <div class="row g-5">
         <div class="col-md-5 col-lg-4 order-md-last">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-primary">Your cart</span>
-                <span class="badge bg-primary rounded-pill">3</span>
+                <span class="text-primary">Giỏ hàng</span>
+                <span class="badge bg-primary rounded-pill"><?php echo sumProdCart() ? sumProdCart() : 0; ?> </span>
             </h4>
             <ul class="list-group mb-3">
+                <?php
+                $li = '
                 <li class="list-group-item d-flex justify-content-between lh-sm">
                     <div>
-                        <h6 class="my-0">Product name</h6>
+                        <h6 class="my-0">%s</h6>
                     </div>
-                    <span class="text-muted">$12</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                        <h6 class="my-0">Second product</h6>
-                    </div>
-                    <span class="text-muted">$8</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-sm">
-                    <div>
-                        <h6 class="my-0">Third item</h6>
-                    </div>
-                    <span class="text-muted">$5</span>
-                </li>
+                    <span class="text-muted">%s VNĐ</span>
+                </li>';
+                foreach ($cart as $prod) {
+                    echo sprintf($li, $prod['name'], number_format($prod['price']));
+                }
+                ?>
 
                 <li class="list-group-item d-flex justify-content-between">
                     <span>Tổng cộng (VNĐ)</span>
-                    <strong>20 VNĐ</strong>
+                    <strong><?php echo number_format(sumPriceCart()); ?> VNĐ</strong>
                 </li>
             </ul>
         </div>
 
         <div class="col-md-7 col-lg-8">
+            <?php include_once(DIR_VIEWS . 'msg.php'); ?>
+
             <h4 class="mb-3">Chọn địa chỉ nhận hàng</h4>
-            <form class="needs-validation" novalidate="">
+            <form method="POST" action="/controllers/checkout.ctl.php" class="needs-validation" novalidate="">
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <label class="form-label">Họ</label>
-                        <input type="text" class="form-control" name="lastName" placeholder="" value="" required="">
+                        <input type="text" class="form-control" placeholder="" value="" required="">
                         <div class="invalid-feedback">
                             Vui lòng nhập họ.
                         </div>
@@ -103,11 +104,11 @@
 
                 <div class="my-3">
                     <div class="form-check">
-                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                        <input id="credit" type="radio" name="paymentMethod" class="form-check-input" checked="" required="">
                         <label class="form-check-label" for="credit">Thẻ tín dụng</label>
                     </div>
                     <div class="form-check">
-                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                        <input id="debit" type="radio" name="paymentMethod" class="form-check-input" required="">
                         <label class="form-check-label" for="debit">Thẻ ATM/Internet banking</label>
                     </div>
                 </div>
