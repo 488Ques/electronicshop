@@ -8,7 +8,6 @@
             </div>
             <div class="col-12 social padding">
                 <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-youtube"></i></a>
             </div>

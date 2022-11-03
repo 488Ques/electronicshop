@@ -264,3 +264,21 @@ table {
   color: white;
   background-color: #3a5c83;
 }
+
+/* Footer */
+.social a {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.bi-facebook {
+  color: #0d6efd;
+}
+
+.bi-instagram {
+  color: #d6249f;
+}
+
+.bi-youtube {
+  color:#bb0000;
+}
