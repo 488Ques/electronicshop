@@ -20,5 +20,7 @@ if (!empty($msg)) {
         case 'login-fail':
             echo (displayAlert('Đăng nhập thất bại', 'alert-danger'));
             break;
+        case 'payment-success':
+            echo displayAlert('Thanh toán thành công', 'alert-success');
     }
 }
