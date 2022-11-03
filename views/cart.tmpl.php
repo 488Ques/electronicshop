@@ -20,7 +20,7 @@ $cart = $_SESSION['cart'];
                         <h5 class="mb-3 pb-1 font-SamsungOne">Tổng cộng</h5>
                         <h3 class="font-SamsungSharpSans"><?php echo number_format(sumPriceCart()); ?> VNĐ</h3>
                     </div>
-                    <a class="btn btn-primary btn-shadow d-block w-100 mt-4" href="#">
+                    <a class="btn btn-primary btn-shadow d-block w-100 mt-4" href="<?php echo sumProdCart() ? '/checkout.php' : '#'; ?>">
                         Thanh toán
                     </a>
                 </div>
