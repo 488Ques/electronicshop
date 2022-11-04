@@ -5,7 +5,7 @@
         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner darkened">
+    <div class="carousel-inner font-SamsungOne darkened">
         <div class="carousel-item active">
             <img src="/static/image/index/1.webp" class="d-block w-100">
             <div class="carousel-caption">
