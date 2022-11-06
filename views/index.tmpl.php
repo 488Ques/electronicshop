@@ -48,120 +48,102 @@
         <h2 class="list-product-title">Điện thoại</h2>
         <div class="product-group">
             <div class="row">
+                <?php
+                $productCard = '
                 <div class="col-md-3 col-sm-6 col-12">
                     <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
+                        <img class="card-img-top" src="%s" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">%s</h5>
                             <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
+                                <span class="del-price">%s VNĐ</span>
                             </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
+                            <a href="/detail.php?id=%s" class="btn btn-primary">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
+                ';
+
+                $phones = $indexController->getFourProducts(1);
+                foreach ($phones as $phone) {
+                    echo sprintf($productCard, $phone['url'], $phone['name'], number_format($phone['price']), $phone['id']);
+                }
+                ?>
             </div>
         </div>
-
     </div>
 
-    <!-- end list product -->
     <div class="row mt-5">
         <h2 class="list-product-title">Tablet</h2>
         <div class="product-group">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="bi bi-cart"></i></a>
-                            <a class="btn btn-outline-info btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                $tablets = $indexController->getFourProducts(2);
+
+                foreach ($tablets as $tablet) {
+                    echo sprintf($productCard, $tablet['url'], $tablet['name'], number_format($tablet['price']), $tablet['id']);
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <h2 class="list-product-title">Laptop</h2>
+        <div class="product-group">
+            <div class="row">
+                <?php
+                $laptops = $indexController->getFourProducts(3);
+
+                foreach ($laptops as $laptop) {
+                    echo sprintf($productCard, $laptop['url'], $laptop['name'], number_format($laptop['price']), $laptop['id']);
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <h2 class="list-product-title">Máy lạnh</h2>
+        <div class="product-group">
+            <div class="row">
+                <?php
+                $acs = $indexController->getFourProducts(4);
+
+                foreach ($acs as $ac) {
+                    echo sprintf($productCard, $ac['url'], $ac['name'], number_format($ac['price']), $ac['id']);
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <h2 class="list-product-title">Tủ lạnh</h2>
+        <div class="product-group">
+            <div class="row">
+                <?php
+                $fridges = $indexController->getFourProducts(5);
+
+                foreach ($fridges as $fridge) {
+                    echo sprintf($productCard, $fridge['url'], $fridge['name'], number_format($fridge['price']), $fridge['id']);
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <h2 class="list-product-title">Máy giặt</h2>
+        <div class="product-group">
+            <div class="row">
+                <?php
+                $washers = $indexController->getFourProducts(6);
+
+                foreach ($washers as $washer) {
+                    echo sprintf($productCard, $washer['url'], $washer['name'], number_format($washer['price']), $washer['id']);
+                }
+                ?>
             </div>
         </div>
     </div>
