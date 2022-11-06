@@ -36,10 +36,10 @@
                     ?>
                 </div>
 
-                <div id="productThumbnails" class="row mt-4 gap-1">
+                <div id="productThumbnails" class="row mt-4">
                     <?php
                     $carouselThumb = '
-                    <div class="col" data-bs-target="#productSlide" data-bs-slide-to="%d">
+                    <div class="col-3" data-bs-target="#productSlide" data-bs-slide-to="%d">
                         <img class="img-fluid" src="%s">
                     </div>';
 
