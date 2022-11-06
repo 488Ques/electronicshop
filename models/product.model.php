@@ -13,7 +13,7 @@ class productModel
 
     public function get($id)
     {
-        $stmt = $this->db->prepare('SELECT id, name, description, price, discount_id, specs_id, created_at, modified_at, deleted_at
+        $stmt = $this->db->prepare('SELECT id, name, description, price, specs_id, created_at, modified_at, deleted_at
          FROM product WHERE id = ? AND deleted_at IS NULL;');
 
         $stmt->execute([$id]);
@@ -36,7 +36,7 @@ class productModel
     // Return all products whose ID belongs to $ids
     public function matchAll($ids)
     {
-        $stmt = 'SELECT id, name, description, price, discount_id, specs_id, created_at, modified_at, deleted_at 
+        $stmt = 'SELECT id, name, description, price, specs_id, created_at, modified_at, deleted_at 
         FROM product WHERE id IN (';
         for ($i = 0; $i < count($ids); $i++) {
             if ($i == count($ids) - 1) {
