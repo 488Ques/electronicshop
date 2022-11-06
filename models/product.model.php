@@ -25,7 +25,6 @@ class productModel
             $product['name'],
             $product['description'],
             $product['price'],
-            $product['discount_id'],
             $product['specs_id'],
             $product['created_at'],
             $product['modified_at'],
