@@ -4,14 +4,14 @@ require_once(DIR_DTOS . 'product_specs.php');
 
 class productSpecsModel
 {
-    protected pdo $db;
+    protected $db;
 
-    public function __construct(pdo $db)
+    public function __construct($db)
     {
         $this->db = $db;
     }
 
-    public function get($id): product_specs
+    public function get($id)
     {
         $stmt = $this->db->prepare('SELECT * FROM product_specs WHERE id = ? AND deleted_at IS NULL;');
         $stmt->execute([$id]);
