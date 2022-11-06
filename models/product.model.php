@@ -130,4 +130,17 @@ class productModel
 
         return $products;
     }
+
+    public function getFourProducts($tagID)
+    {
+        $stmt = 'SELECT prod.id, prod.name, prod.price, image.url 
+        FROM product prod, product_image image, producttag_map map
+        WHERE map.tag_id = ? AND prod.id = map.product_id AND prod.id = image.product_id AND image.is_thumbnail = 1 LIMIT 4;';
+
+        $prepared = $this->db->prepare($stmt);
+        $prepared->execute([$tagID]);
+
+        $result = $prepared->fetchAll();
+        return $result;
+    }
 }
