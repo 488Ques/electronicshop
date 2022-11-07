@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 06, 2022 at 04:13 PM
+-- Generation Time: Nov 07, 2022 at 06:57 PM
 -- Server version: 10.9.3-MariaDB
 -- PHP Version: 8.1.12
 
@@ -44,73 +44,73 @@ CREATE TABLE `product` (
 
 INSERT INTO `product` (`id`, `name`, `description`, `price`, `specs_id`, `created_at`, `modified_at`, `deleted_at`) VALUES
 (1, 'Điện thoại Samsung Galaxy A03 32GB Đen', NULL, 2990000, 1, '2022-10-24 00:59:35', '2022-11-06 15:59:08', NULL),
-(2, 'Điện thoại Samsung Galaxy A13 4GB/128GB Đen', NULL, 4690000, NULL, '2022-10-24 01:02:38', '2022-10-24 01:20:20', NULL),
-(3, 'Điện thoại Samsung Galaxy A04s 4GB/64GB Đen', NULL, 3990000, NULL, '2022-10-24 01:04:32', '2022-10-24 01:20:23', NULL),
-(4, 'Điện thoại Samsung Galaxy A03s 64GB Đen', NULL, 3690000, NULL, '2022-10-24 01:04:32', '2022-10-24 01:20:25', NULL),
-(5, 'Điện thoại iPhone 12 64GB Đen', NULL, 19990000, NULL, '2022-10-24 01:20:04', '2022-10-24 01:20:27', NULL),
-(6, 'Điện thoại iPhone 12 64GB Xanh lá', NULL, 15490000, NULL, '2022-10-24 01:20:04', '2022-10-24 01:20:29', NULL),
-(7, 'Điện thoại iPhone 14 Pro 256GB Tím', NULL, 34990000, NULL, '2022-10-24 01:20:04', '2022-10-24 01:20:39', NULL),
-(8, 'Điện thoại iPhone 11 64GB Đen', NULL, 10790000, NULL, '2022-10-24 01:20:04', '2022-10-24 01:20:41', NULL),
-(9, 'Điện thoại Nokia 8210 4G Xanh', NULL, 1490000, NULL, '2022-10-24 01:23:43', '2022-10-24 01:23:43', NULL),
-(10, 'Điện thoại Nokia C31 3GB/32GB Xanh thiên thanh', NULL, 3190000, NULL, '2022-10-24 01:23:43', '2022-10-24 01:23:43', NULL),
-(11, 'Điện thoại Nokia C21 Plus 2GB/64GB Xám Ánh Kim', NULL, 1990000, NULL, '2022-10-24 01:23:43', '2022-10-24 01:23:43', NULL),
-(12, 'Điện thoại Nokia G11 Plus 3GB/64GB Xanh', NULL, 3390000, NULL, '2022-10-24 01:23:43', '2022-10-24 01:23:43', NULL),
-(13, 'iPad Gen 9 Wifi 64GB 10.2 inch Bạc (2021)', NULL, 9990000, NULL, '2022-10-24 01:28:50', '2022-10-24 01:29:21', NULL),
-(14, 'iPad Gen 9 Wifi Cellular 64GB 10.2 inch MK493ZA/A Bạc (2021)', NULL, 13890000, NULL, '2022-10-24 01:28:50', '2022-10-24 01:39:45', NULL),
-(15, 'Máy tính bảng iPad Pro M1 2021 11 inch Wifi 8GB/128GB MHQR3ZA/A Xám', NULL, 21990000, NULL, '2022-10-24 01:28:50', '2022-10-24 01:39:47', NULL),
-(16, 'iPad Gen 9 Wifi 256GB 10.2 inch Bạc (2021)', NULL, 13890000, NULL, '2022-10-24 01:28:50', '2022-10-24 01:39:50', NULL),
-(17, 'Máy tính bảng Samsung Galaxy Tab A7 Lite 32GB Bạc', NULL, 4490000, NULL, '2022-10-24 01:31:33', '2022-10-24 01:31:33', NULL),
-(18, 'Máy tính bảng Samsung Galaxy Tab A7 Lite 32GB Xám', NULL, 4490000, NULL, '2022-10-24 01:31:33', '2022-10-24 01:31:33', NULL),
-(19, 'Máy tính bảng Samsung Galaxy Tab A8 64GB Xám (2022)', NULL, 8490000, NULL, '2022-10-24 01:31:33', '2022-10-24 01:31:33', NULL),
-(20, 'Máy tính bảng Samsung Galaxy Tab S7 FE 64GB Xanh', NULL, 13990000, NULL, '2022-10-24 01:31:33', '2022-10-24 01:31:33', NULL),
-(21, 'Laptop Asus VivoBook X415EA-EK675W i3-1115G4/4GB/256GB/Win11', NULL, 10990000, NULL, '2022-10-24 01:37:13', '2022-10-24 02:06:18', NULL),
-(22, 'Laptop Asus Vivobook A415EA i3-1125G4/8GB/256GB/Win11 (EB1750W)', NULL, 13390000, NULL, '2022-10-24 01:37:13', '2022-10-24 02:06:21', NULL),
-(23, 'Laptop Asus Vivobook 15X OLED i5-12500H/8GB4/512GB/Win11 A1503ZA-L1421W', NULL, 20490000, NULL, '2022-10-24 01:37:13', '2022-10-24 02:06:23', NULL),
-(24, 'Laptop Asus TUF Gaming F15 FX506HC i5-11400H/8GB/512GB/Win11 HN144W', NULL, 20190000, NULL, '2022-10-24 01:37:13', '2022-10-24 02:06:24', NULL),
-(25, 'Laptop HP 15S-FQ2663TU i3-1115G4/8GB/256GB/Win11 6K796PA', NULL, 10790000, NULL, '2022-10-24 01:39:38', '2022-10-24 02:06:25', NULL),
-(26, 'Laptop HP 240 G8 i5-1135G7/8GB/256GB/Win11 617L4PA', NULL, 16990000, NULL, '2022-10-24 01:39:38', '2022-10-24 02:06:39', NULL),
-(27, 'Laptop HP Pavilion 15-EG0509TU i3-1125G4/4GB/512GB SSD/Win11 (46M08PA)', NULL, 15890000, NULL, '2022-10-24 01:39:38', '2022-10-24 02:06:42', NULL),
-(28, 'Laptop HP Pavilion 15-EG2058TU i5-1240P/8GB/256GB/Win11 6K788PA', NULL, 17990000, NULL, '2022-10-24 01:39:38', '2022-10-24 02:06:46', NULL),
-(29, 'Laptop Dell Vostro 5410 I5-11320H/8GB/512GB/Win11 (V4I5214W1)', NULL, 22690000, NULL, '2022-10-24 01:41:42', '2022-10-24 02:06:49', NULL),
-(30, 'Laptop Dell Vostro 3405 R5-3500U/8GB/512GB/Win11 (V4R53500U003W1)', NULL, 18690000, NULL, '2022-10-24 01:41:42', '2022-10-24 02:06:52', NULL),
-(31, 'Laptop Dell Vostro 14 3400 i5 1135G7/8GB/512GB/Win11 YX51W5', NULL, 21790000, NULL, '2022-10-24 01:41:42', '2022-10-24 02:07:00', NULL),
-(32, 'Laptop Dell Vostro 3400 i5-1135G7/8GB/256GB/Win11 (70270645)', NULL, 18990000, NULL, '2022-10-24 01:41:42', '2022-10-24 02:07:02', NULL),
-(33, 'Máy lạnh Panasonic 1.5 HP CU/CS-N12WKH-8M', NULL, 11990000, NULL, '2022-10-24 01:44:38', '2022-10-24 02:08:45', NULL),
-(34, 'Máy lạnh Panasonic 1 HP CU/CS-N9WKH-8M', NULL, 9490000, NULL, '2022-10-24 01:44:38', '2022-10-24 02:08:51', NULL),
-(35, 'Máy lạnh Panasonic Inverter 1HP CU/CS-VU9UKH-8', NULL, 18390000, NULL, '2022-10-24 01:44:38', '2022-10-24 02:08:54', NULL),
-(36, 'Máy lạnh Panasonic Inverter 1 HP CU/CS-XU9XKH-8', NULL, 13490000, NULL, '2022-10-24 01:44:38', '2022-10-24 02:08:56', NULL),
-(37, 'Máy lạnh Daikin 1 HP ATF25UV1V', NULL, 9190000, NULL, '2022-10-24 01:49:15', '2022-10-24 02:08:58', NULL),
-(38, 'Máy lạnh Daikin 1.5 HP ATF35UV1V', NULL, 11590000, NULL, '2022-10-24 01:49:15', '2022-10-24 02:09:02', NULL),
-(39, 'Máy lạnh Daikin Inverter 1.5 HP FTKA35VMVMV', NULL, 12890000, NULL, '2022-10-24 01:49:15', '2022-10-24 02:09:04', NULL),
-(40, 'Máy lạnh Daikin Inverter 1.5 HP ATKC35UAVMV', NULL, 14990000, NULL, '2022-10-24 01:49:15', '2022-10-24 02:09:06', NULL),
-(41, 'Máy lạnh Toshiba Inverter 1.5 HP RAS-H13C3KCVG-V', NULL, 12990000, NULL, '2022-10-24 01:52:55', '2022-10-24 02:09:07', NULL),
-(42, 'Máy lạnh Toshiba Inverter 1.5 HP RAS-H13E2KCVG-V', NULL, 13900000, NULL, '2022-10-24 01:52:55', '2022-10-24 02:09:09', NULL),
-(43, 'Máy lạnh Toshiba Inverter 1 HP RAS-H10E2KCVG-V', NULL, 11690000, NULL, '2022-10-24 01:52:55', '2022-10-24 02:09:11', NULL),
-(44, 'Máy lạnh Toshiba Inverter 2.5 HP RAS-H24E2KCVG-V', NULL, 24600000, NULL, '2022-10-24 01:52:55', '2022-10-24 02:09:13', NULL),
-(45, 'Tủ lạnh Samsung Inverter 208 lít RT20HAR8DBU', NULL, 8290000, NULL, '2022-10-24 01:55:09', '2022-10-24 02:09:14', NULL),
-(46, 'Tủ lạnh Samsung Inverter 680 lít RS62R5001M9', NULL, 24490000, NULL, '2022-10-24 01:55:09', '2022-10-24 02:09:17', NULL),
-(47, 'Tủ lạnh Samsung Inverter 236 lít RT22M4032BU', NULL, 9590000, NULL, '2022-10-24 01:55:09', '2022-10-24 02:09:19', NULL),
-(48, 'Tủ Lạnh Samsung Inverter 208 lít RT19M300BGS', NULL, 7090000, NULL, '2022-10-24 01:55:09', '2022-10-24 02:09:22', NULL),
-(49, 'Tủ lạnh Panasonic Inverter 366 lít NR-TL381GPKV', NULL, 15490000, NULL, '2022-10-24 01:57:41', '2022-10-24 02:09:24', NULL),
-(50, 'Tủ lạnh Panasonic Inverter 234 lít NR-TV261APSV', NULL, 8090000, NULL, '2022-10-24 01:57:41', '2022-10-24 02:09:26', NULL),
-(51, 'Tủ lạnh Panasonic Inverter 420 lít NR-BX471WGKV', NULL, 20990000, NULL, '2022-10-24 01:57:41', '2022-10-24 02:09:32', NULL),
-(52, 'Tủ lạnh Panasonic Inverter 326 lít NR-TL351GPKV', NULL, 13990000, NULL, '2022-10-24 01:57:41', '2022-10-24 02:09:35', NULL),
-(53, 'Tủ lạnh Sharp Inverter 556 lít SJ-FX631V-SL', NULL, 24000000, NULL, '2022-10-24 01:59:33', '2022-10-24 02:09:38', NULL),
-(54, 'Tủ lạnh Sharp Inverter 315 lít SJ-X346E-SL', NULL, 10000000, NULL, '2022-10-24 01:59:33', '2022-10-24 02:09:40', NULL),
-(55, 'Tủ lạnh Sharp Inverter 253 lít SJ-X281E-SL', NULL, 8100000, NULL, '2022-10-24 01:59:33', '2022-10-24 02:09:42', NULL),
-(56, 'Tủ lạnh Sharp Inverter 165 lít SJ-X196E-SL', NULL, 6300000, NULL, '2022-10-24 01:59:33', '2022-10-24 02:09:44', NULL),
-(57, 'Máy giặt sấy LG Inverter 11 kg FV1410D4P', NULL, 22190000, NULL, '2022-10-24 02:01:44', '2022-10-24 02:09:46', NULL),
-(58, 'Máy giặt sấy LG Inverter 15 kg F2515RTGB', NULL, 30990000, NULL, '2022-10-24 02:01:44', '2022-10-24 02:09:52', NULL),
-(59, 'Máy giặt LG Inverter 11 kg FV1411S4P', NULL, 19790000, NULL, '2022-10-24 02:01:44', '2022-10-24 02:09:55', NULL),
-(60, 'Máy giặt LG Inverter 15 kg F2515STGW', NULL, 24990000, NULL, '2022-10-24 02:01:44', '2022-10-24 02:09:57', NULL),
-(61, 'Máy giặt Electrolux Inverter 9 kg EWF9024P5WB', NULL, 13990000, NULL, '2022-10-24 02:04:05', '2022-10-24 02:09:59', NULL),
-(62, 'Máy giặt Electrolux Inverter 9 kg EWF9024P5SB', NULL, 14990000, NULL, '2022-10-24 02:04:05', '2022-10-24 02:10:01', NULL),
-(63, 'Máy giặt Electrolux Inverter 8 kg EWF8024D3WB', NULL, 10490000, NULL, '2022-10-24 02:04:05', '2022-10-24 02:10:02', NULL),
-(64, 'Máy giặt Electrolux Inverter 10 kg EWF1024P5WB', NULL, 15990000, NULL, '2022-10-24 02:04:05', '2022-10-24 02:10:04', NULL),
-(65, 'Máy giặt Toshiba Inverter 8.5 kg TW-BK95S2V(WK)', NULL, 9090000, NULL, '2022-10-24 02:05:34', '2022-10-24 02:10:08', NULL),
-(66, 'Máy giặt Toshiba Inverter 10.5 kg AW-DUK1160HV(SG)', NULL, 8590000, NULL, '2022-10-24 02:05:34', '2022-10-24 02:10:10', NULL),
-(67, 'Máy giặt Toshiba Inverter 9 Kg AW-DK1000FV(KK)', NULL, 9090000, NULL, '2022-10-24 02:05:34', '2022-10-24 02:10:13', NULL),
-(68, 'Máy giặt Toshiba 9 kg AW-H1000GV', NULL, 6790000, NULL, '2022-10-24 02:05:34', '2022-10-24 02:10:16', NULL);
+(2, 'Điện thoại Samsung Galaxy A13 4GB/128GB Đen', NULL, 4690000, 2, '2022-10-24 01:02:38', '2022-11-07 18:02:14', NULL),
+(3, 'Điện thoại Samsung Galaxy A04s 4GB/64GB Đen', NULL, 3990000, 3, '2022-10-24 01:04:32', '2022-11-07 18:07:43', NULL),
+(4, 'Điện thoại Samsung Galaxy A03s 64GB Đen', NULL, 3690000, 4, '2022-10-24 01:04:32', '2022-11-07 18:07:45', NULL),
+(5, 'Điện thoại iPhone 12 64GB Đen', NULL, 19990000, 5, '2022-10-24 01:20:04', '2022-11-07 18:07:47', NULL),
+(6, 'Điện thoại iPhone 12 64GB Xanh lá', NULL, 15490000, 6, '2022-10-24 01:20:04', '2022-11-07 18:07:49', NULL),
+(7, 'Điện thoại iPhone 14 Pro 256GB Tím', NULL, 34990000, 7, '2022-10-24 01:20:04', '2022-11-07 18:07:51', NULL),
+(8, 'Điện thoại iPhone 11 64GB Đen', NULL, 10790000, 8, '2022-10-24 01:20:04', '2022-11-07 18:07:53', NULL),
+(9, 'Điện thoại Nokia 8210 4G Xanh', NULL, 1490000, 9, '2022-10-24 01:23:43', '2022-11-07 18:07:56', NULL),
+(10, 'Điện thoại Nokia C31 3GB/32GB Xanh thiên thanh', NULL, 3190000, 10, '2022-10-24 01:23:43', '2022-11-07 18:07:59', NULL),
+(11, 'Điện thoại Nokia C21 Plus 2GB/64GB Xám Ánh Kim', NULL, 1990000, 11, '2022-10-24 01:23:43', '2022-11-07 18:08:01', NULL),
+(12, 'Điện thoại Nokia G11 Plus 3GB/64GB Xanh', NULL, 3390000, 12, '2022-10-24 01:23:43', '2022-11-07 18:08:03', NULL),
+(13, 'iPad Gen 9 Wifi 64GB 10.2 inch Bạc (2021)', NULL, 9990000, 13, '2022-10-24 01:28:50', '2022-11-07 18:11:11', NULL),
+(14, 'iPad Gen 9 Wifi Cellular 64GB 10.2 inch MK493ZA/A Bạc (2021)', NULL, 13890000, 14, '2022-10-24 01:28:50', '2022-11-07 18:11:12', NULL),
+(15, 'Máy tính bảng iPad Pro M1 2021 11 inch Wifi 8GB/128GB MHQR3ZA/A Xám', NULL, 21990000, 15, '2022-10-24 01:28:50', '2022-11-07 18:11:14', NULL),
+(16, 'iPad Gen 9 Wifi 256GB 10.2 inch Bạc (2021)', NULL, 13890000, 16, '2022-10-24 01:28:50', '2022-11-07 18:11:16', NULL),
+(17, 'Máy tính bảng Samsung Galaxy Tab A7 Lite 32GB Bạc', NULL, 4490000, 17, '2022-10-24 01:31:33', '2022-11-07 18:11:18', NULL),
+(18, 'Máy tính bảng Samsung Galaxy Tab A7 Lite 32GB Xám', NULL, 4490000, 18, '2022-10-24 01:31:33', '2022-11-07 18:11:20', NULL),
+(19, 'Máy tính bảng Samsung Galaxy Tab A8 64GB Xám (2022)', NULL, 8490000, 19, '2022-10-24 01:31:33', '2022-11-07 18:11:22', NULL),
+(20, 'Máy tính bảng Samsung Galaxy Tab S7 FE 64GB Xanh', NULL, 13990000, 20, '2022-10-24 01:31:33', '2022-11-07 18:11:24', NULL),
+(21, 'Laptop Asus VivoBook X415EA-EK675W i3-1115G4/4GB/256GB/Win11', NULL, 10990000, 21, '2022-10-24 01:37:13', '2022-11-07 18:20:01', NULL),
+(22, 'Laptop Asus Vivobook A415EA i3-1125G4/8GB/256GB/Win11 (EB1750W)', NULL, 13390000, 22, '2022-10-24 01:37:13', '2022-11-07 18:20:03', NULL),
+(23, 'Laptop Asus Vivobook 15X OLED i5-12500H/8GB4/512GB/Win11 A1503ZA-L1421W', NULL, 20490000, 23, '2022-10-24 01:37:13', '2022-11-07 18:20:05', NULL),
+(24, 'Laptop Asus TUF Gaming F15 FX506HC i5-11400H/8GB/512GB/Win11 HN144W', NULL, 20190000, 24, '2022-10-24 01:37:13', '2022-11-07 18:20:07', NULL),
+(25, 'Laptop HP 15S-FQ2663TU i3-1115G4/8GB/256GB/Win11 6K796PA', NULL, 10790000, 25, '2022-10-24 01:39:38', '2022-11-07 18:20:09', NULL),
+(26, 'Laptop HP 240 G8 i5-1135G7/8GB/256GB/Win11 617L4PA', NULL, 16990000, 26, '2022-10-24 01:39:38', '2022-11-07 18:20:39', NULL),
+(27, 'Laptop HP Pavilion 15-EG0509TU i3-1125G4/4GB/512GB SSD/Win11 (46M08PA)', NULL, 15890000, 27, '2022-10-24 01:39:38', '2022-11-07 18:20:41', NULL),
+(28, 'Laptop HP Pavilion 15-EG2058TU i5-1240P/8GB/256GB/Win11 6K788PA', NULL, 17990000, 28, '2022-10-24 01:39:38', '2022-11-07 18:20:44', NULL),
+(29, 'Laptop Dell Vostro 5410 I5-11320H/8GB/512GB/Win11 (V4I5214W1)', NULL, 22690000, 29, '2022-10-24 01:41:42', '2022-11-07 18:20:46', NULL),
+(30, 'Laptop Dell Vostro 3405 R5-3500U/8GB/512GB/Win11 (V4R53500U003W1)', NULL, 18690000, 30, '2022-10-24 01:41:42', '2022-11-07 18:20:56', NULL),
+(31, 'Laptop Dell Vostro 14 3400 i5 1135G7/8GB/512GB/Win11 YX51W5', NULL, 21790000, 31, '2022-10-24 01:41:42', '2022-11-07 18:20:59', NULL),
+(32, 'Laptop Dell Vostro 3400 i5-1135G7/8GB/256GB/Win11 (70270645)', NULL, 18990000, 32, '2022-10-24 01:41:42', '2022-11-07 18:21:00', NULL),
+(33, 'Máy lạnh Panasonic 1.5 HP CU/CS-N12WKH-8M', NULL, 11990000, 33, '2022-10-24 01:44:38', '2022-11-07 18:25:15', NULL),
+(34, 'Máy lạnh Panasonic 1 HP CU/CS-N9WKH-8M', NULL, 9490000, 34, '2022-10-24 01:44:38', '2022-11-07 18:25:17', NULL),
+(35, 'Máy lạnh Panasonic Inverter 1HP CU/CS-VU9UKH-8', NULL, 18390000, 35, '2022-10-24 01:44:38', '2022-11-07 18:25:38', NULL),
+(36, 'Máy lạnh Panasonic Inverter 1 HP CU/CS-XU9XKH-8', NULL, 13490000, 36, '2022-10-24 01:44:38', '2022-11-07 18:25:41', NULL),
+(37, 'Máy lạnh Daikin 1 HP ATF25UV1V', NULL, 9190000, 37, '2022-10-24 01:49:15', '2022-11-07 18:25:44', NULL),
+(38, 'Máy lạnh Daikin 1.5 HP ATF35UV1V', NULL, 11590000, 38, '2022-10-24 01:49:15', '2022-11-07 18:25:46', NULL),
+(39, 'Máy lạnh Daikin Inverter 1.5 HP FTKA35VMVMV', NULL, 12890000, 39, '2022-10-24 01:49:15', '2022-11-07 18:25:47', NULL),
+(40, 'Máy lạnh Daikin Inverter 1.5 HP ATKC35UAVMV', NULL, 14990000, 40, '2022-10-24 01:49:15', '2022-11-07 18:25:49', NULL),
+(41, 'Máy lạnh Toshiba Inverter 1.5 HP RAS-H13C3KCVG-V', NULL, 12990000, 41, '2022-10-24 01:52:55', '2022-11-07 18:25:51', NULL),
+(42, 'Máy lạnh Toshiba Inverter 1.5 HP RAS-H13E2KCVG-V', NULL, 13900000, 42, '2022-10-24 01:52:55', '2022-11-07 18:25:53', NULL),
+(43, 'Máy lạnh Toshiba Inverter 1 HP RAS-H10E2KCVG-V', NULL, 11690000, 43, '2022-10-24 01:52:55', '2022-11-07 18:25:55', NULL),
+(44, 'Máy lạnh Toshiba Inverter 2.5 HP RAS-H24E2KCVG-V', NULL, 24600000, 44, '2022-10-24 01:52:55', '2022-11-07 18:25:57', NULL),
+(45, 'Tủ lạnh Samsung Inverter 208 lít RT20HAR8DBU', NULL, 8290000, 45, '2022-10-24 01:55:09', '2022-11-07 18:30:57', NULL),
+(46, 'Tủ lạnh Samsung Inverter 680 lít RS62R5001M9', NULL, 24490000, 46, '2022-10-24 01:55:09', '2022-11-07 18:31:00', NULL),
+(47, 'Tủ lạnh Samsung Inverter 236 lít RT22M4032BU', NULL, 9590000, 47, '2022-10-24 01:55:09', '2022-11-07 18:31:03', NULL),
+(48, 'Tủ Lạnh Samsung Inverter 208 lít RT19M300BGS', NULL, 7090000, 48, '2022-10-24 01:55:09', '2022-11-07 18:31:05', NULL),
+(49, 'Tủ lạnh Panasonic Inverter 366 lít NR-TL381GPKV', NULL, 15490000, 49, '2022-10-24 01:57:41', '2022-11-07 18:31:07', NULL),
+(50, 'Tủ lạnh Panasonic Inverter 234 lít NR-TV261APSV', NULL, 8090000, 50, '2022-10-24 01:57:41', '2022-11-07 18:31:09', NULL),
+(51, 'Tủ lạnh Panasonic Inverter 420 lít NR-BX471WGKV', NULL, 20990000, 51, '2022-10-24 01:57:41', '2022-11-07 18:31:17', NULL),
+(52, 'Tủ lạnh Panasonic Inverter 326 lít NR-TL351GPKV', NULL, 13990000, 52, '2022-10-24 01:57:41', '2022-11-07 18:31:20', NULL),
+(53, 'Tủ lạnh Sharp Inverter 556 lít SJ-FX631V-SL', NULL, 24000000, 53, '2022-10-24 01:59:33', '2022-11-07 18:31:22', NULL),
+(54, 'Tủ lạnh Sharp Inverter 315 lít SJ-X346E-SL', NULL, 10000000, 54, '2022-10-24 01:59:33', '2022-11-07 18:31:24', NULL),
+(55, 'Tủ lạnh Sharp Inverter 253 lít SJ-X281E-SL', NULL, 8100000, 55, '2022-10-24 01:59:33', '2022-11-07 18:31:26', NULL),
+(56, 'Tủ lạnh Sharp Inverter 165 lít SJ-X196E-SL', NULL, 6300000, 56, '2022-10-24 01:59:33', '2022-11-07 18:31:28', NULL),
+(57, 'Máy giặt sấy LG Inverter 11 kg FV1410D4P', NULL, 22190000, 57, '2022-10-24 02:01:44', '2022-11-07 18:49:57', NULL),
+(58, 'Máy giặt sấy LG Inverter 15 kg F2515RTGB', NULL, 30990000, 58, '2022-10-24 02:01:44', '2022-11-07 18:50:00', NULL),
+(59, 'Máy giặt LG Inverter 11 kg FV1411S4P', NULL, 19790000, 59, '2022-10-24 02:01:44', '2022-11-07 18:50:03', NULL),
+(60, 'Máy giặt LG Inverter 15 kg F2515STGW', NULL, 24990000, 60, '2022-10-24 02:01:44', '2022-11-07 18:50:05', NULL),
+(61, 'Máy giặt Electrolux Inverter 9 kg EWF9024P5WB', NULL, 13990000, 61, '2022-10-24 02:04:05', '2022-11-07 18:50:07', NULL),
+(62, 'Máy giặt Electrolux Inverter 9 kg EWF9024P5SB', NULL, 14990000, 62, '2022-10-24 02:04:05', '2022-11-07 18:50:09', NULL),
+(63, 'Máy giặt Electrolux Inverter 8 kg EWF8024D3WB', NULL, 10490000, 63, '2022-10-24 02:04:05', '2022-11-07 18:50:12', NULL),
+(64, 'Máy giặt Electrolux Inverter 10 kg EWF1024P5WB', NULL, 15990000, 64, '2022-10-24 02:04:05', '2022-11-07 18:50:14', NULL),
+(65, 'Máy giặt Toshiba Inverter 8.5 kg TW-BK95S2V(WK)', NULL, 9090000, 65, '2022-10-24 02:05:34', '2022-11-07 18:50:15', NULL),
+(66, 'Máy giặt Toshiba Inverter 10.5 kg AW-DUK1160HV(SG)', NULL, 8590000, 66, '2022-10-24 02:05:34', '2022-11-07 18:50:17', NULL),
+(67, 'Máy giặt Toshiba Inverter 9 Kg AW-DK1000FV(KK)', NULL, 9090000, 67, '2022-10-24 02:05:34', '2022-11-07 18:50:19', NULL),
+(68, 'Máy giặt Toshiba 9 kg AW-H1000GV', NULL, 6790000, 68, '2022-10-24 02:05:34', '2022-11-07 18:50:22', NULL);
 
 -- --------------------------------------------------------
 
@@ -571,7 +571,74 @@ CREATE TABLE `product_specs` (
 --
 
 INSERT INTO `product_specs` (`id`, `specs`, `created_at`, `modified_at`, `deleted_at`) VALUES
-(1, '{\r\n    \"Model\": \"A03 (SM-A035F/DS)\",\r\n    \"Màu sắc\": \"Đen\",\r\n    \"Nhà sản xuất\": \"Samsung\",\r\n    \"Xuất xứ\": \"Trung Quốc\",\r\n    \"Thời gian bảo hành\": \"12 Tháng\",\r\n    \"Bộ nhớ trong\": \"32GB\",\r\n    \"Loại màn hình\": \"Infinity-V TFT LCD 20:9\",\r\n    \"Kích thước màn hình\": \"6.5 \\\"\",\r\n    \"Độ phân giải màn hình\": \"HD+ (720x1600) pixels\"\r\n}', '2022-10-24 05:54:39', '2022-10-30 09:26:12', NULL);
+(1, '{\r\n    \"Model\": \"A03 (SM-A035F/DS)\",\r\n    \"Màu sắc\": \"Đen\",\r\n    \"Nhà sản xuất\": \"Samsung\",\r\n    \"Xuất xứ\": \"Trung Quốc\",\r\n    \"Thời gian bảo hành\": \"12 Tháng\",\r\n    \"Bộ nhớ trong\": \"32GB\",\r\n    \"Loại màn hình\": \"Infinity-V TFT LCD 20:9\",\r\n    \"Kích thước màn hình\": \"6.5 \\\"\",\r\n    \"Độ phân giải màn hình\": \"HD+ (720x1600) pixels\"\r\n}', '2022-10-24 05:54:39', '2022-10-30 09:26:12', NULL),
+(2, '{\"Model:\":\" SM-A135F/DS \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 4GB \",\"Bộ nhớ trong:\":\" 128GB \",\"Hỗ trợ thẻ nhớ ngoài:\":\" Hỗ trợ thẻ nhớ lên đến 1TB \",\"Chipset:\":\" Exynos850 (8 nhân) \"}', '2022-11-07 18:01:53', '2022-11-07 18:01:53', NULL),
+(3, '{\"Model:\":\" SM-A047F/DS \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 4GB \",\"Bộ nhớ trong:\":\" 64GB \",\"Hệ điều hành:\":\" \\tAndroid 12, One UI Core 4 \",\"Chipset:\":\" \\tExynos 850 (8nm) \"}', '2022-11-07 18:04:04', '2022-11-07 18:04:04', NULL),
+(4, '{\"Model:\":\" A03s (SM-A037F/DS) \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 4GB \",\"Bộ nhớ trong:\":\" 64GB \",\"Hệ điều hành:\":\" Android \",\"CPU:\":\" 8 nhân, 2.3GHz, 1.8GHz \"}', '2022-11-07 18:06:03', '2022-11-07 18:06:03', NULL),
+(5, '{\"Model:\":\" iPhone 12 64GB \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" iPhone \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Hệ điều hành:\":\" iOS 14.1 \",\"Chipset:\":\" Apple A14 Bionic \",\"RAM:\":\" 4 GB \"}', '2022-11-07 18:06:03', '2022-11-07 18:06:03', NULL),
+(6, '{\"Model:\":\" iPhone 12 64GB \",\"Màu sắc:\":\" Xanh lá \",\"Nhà sản xuất:\":\" iPhone \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Hệ điều hành:\":\" iOS 14.1 \",\"Chipset:\":\" Apple A14 Bionic \",\"RAM:\":\" 4 GB \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(7, '{\"Màu sắc:\":\" Tím \",\"Nhà sản xuất:\":\" iPhone \",\"Năm ra mắt :\":\" 2022 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Hệ điều hành:\":\" iOS 16 \",\"Chipset:\":\" Apple A16 Bionic \",\"Bộ nhớ trong:\":\" 256GB \",\"Loại màn hình:\":\" OLED \",\"Kích thước màn hình:\":\" 6.1 \\\" \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(8, '{\"Model:\":\" IPHONE1164GB \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" iPhone \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2019 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 4 GB \",\"Bộ nhớ trong:\":\" 64 GB \",\"Hệ điều hành:\":\" iOS 13 \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(9, '{\"Model:\":\" NOKIA8210 \",\"Màu sắc:\":\" Xanh \",\"Nhà sản xuất:\":\" Nokia \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 48 MP \",\"Bộ nhớ trong:\":\" \\t128 MB \",\"Hỗ trợ thẻ nhớ ngoài:\":\" MicroSD, hỗ trợ tối đa 32 GB \",\"Hệ điều hành:\":\" Series 30+ \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(10, '{\"Model:\":\" NOKIAC31 \",\"Màu sắc:\":\" Xanh thiên thanh \",\"Nhà sản xuất:\":\" Nokia \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 3 GB \",\"Bộ nhớ trong:\":\" 32 GB \",\"Hỗ trợ thẻ nhớ ngoài:\":\" MicroSD, Hổ trợ thẻ nhớ tối đa 256 GB \",\"Hệ điều hành:\":\" \\tAndroid 12 \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(11, '{\"Model:\":\" NOKIAC21PLUS2/64 \",\"Màu sắc:\":\" Xám Ánh Kim \",\"Nhà sản xuất:\":\" Nokia \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 2 GB \",\"Bộ nhớ trong:\":\" 64 GB \",\"Hệ điều hành:\":\" Android 11 (Go Edition) \",\"Chipset:\":\" Unisoc SC9863A \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(12, '{\"Model:\":\" NOKIAG11 \",\"Màu sắc:\":\" Xanh \",\"Nhà sản xuất:\":\" Nokia \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"RAM:\":\" 3 GB \",\"Bộ nhớ trong:\":\" 64 GB \",\"Hỗ trợ thẻ nhớ ngoài:\":\" \\tHỗ trợ thẻ MicroSD lên đến 512 GB \",\"Hệ điều hành:\":\" Android™ 12 \"}', '2022-11-07 18:07:34', '2022-11-07 18:07:34', NULL),
+(13, '{\"Model:\":\" MK2L3ZA/A \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Apple \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" iPad Gen 9 \",\"Hệ điều hành:\":\" iPadOS 15 \",\"Chipset:\":\" A13 Bionic \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(14, '{\"Model:\":\" MK493ZA/A \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Apple \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" iPad Gen 9 \",\"Hệ điều hành:\":\" iPadOS 15 \",\"Chipset:\":\" A13 Bionic \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(15, '{\"Model:\":\" MHQR3ZA/A \",\"Màu sắc:\":\" Xám \",\"Nhà sản xuất:\":\" Apple \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" iPad Pro 11 inch \",\"Hệ điều hành:\":\" iPadOS 14 \",\"Chipset:\":\" Apple M1 8 nhân \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(16, '{\"Model:\":\" MK2P3ZA/A \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Apple \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" iPad Gen 9 \",\"Hệ điều hành:\":\" iPadOS 15 \",\"Chipset:\":\" A13 Bionic \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(17, '{\"Model:\":\" SM-T225 \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" Galaxy Tab A7 Lite \",\"Hệ điều hành:\":\" Android Pie 10 \",\"CPU:\":\" Mediatek MT8768T (Quad 2.3 GHz + Quad 1.8 GHz) \",\"RAM:\":\" 3 GB \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(18, '{\"Model:\":\" SM-T225 \",\"Màu sắc:\":\" Xám \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" Galaxy Tab A7 Lite \",\"Hệ điều hành:\":\" Android Pie 10 \",\"CPU:\":\" Mediatek MT8768T (Quad 2.3 GHz + Quad 1.8 GHz) \",\"RAM:\":\" 3 GB \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(19, '{\"Model:\":\" SM-X205 \",\"Màu sắc:\":\" Xám \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" Galaxy Tab A8 (2022) \",\"Hệ điều hành:\":\" Android 11 \",\"Chipset:\":\" UniSOC T618 \",\"CPU:\":\" 2 nhân 2.0 GHz \\u0026 6 nhân 2.0 GHz \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(20, '{\"Model:\":\" SM-T735 \",\"Màu sắc:\":\" Xanh \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại Máy:\":\" Galaxy Tab S7 FE \",\"Chipset:\":\" Vi xử lý Snapdragon 750G \",\"CPU:\":\" Dual 2.2 GHz + Hexa 1.8 GHz \",\"RAM:\":\" 4 GB \"}', '2022-11-07 18:11:04', '2022-11-07 18:11:04', NULL),
+(21, '{\"Model:\":\" X415EA-EK675W \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Asus \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"CPU:\":\" Intel Core i3-1115G4 \",\"Loại RAM:\":\" DDR4 on board \",\"Dung lượng RAM:\":\" 4 GB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(22, '{\"Model:\":\" A415EA-EB1750W \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Asus \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"CPU:\":\" Intel® Core™ i3-1125G4 Processor 2.0 GHz (8M Cache, up to 3.7 GHz, 4 cores) \",\"Loại RAM:\":\" DDR4 on board \",\"Dung lượng RAM:\":\" 8 GB \",\"Loại ổ đĩa cứng:\":\" SSD \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(23, '{\"Model:\":\" A1503ZA-L1421W \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Asus \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2022 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"CPU:\":\" i5-12500H \",\"Tốc độ CPU:\":\" 2.5 GHz \",\"Bộ nhớ đệm:\":\" 18 MB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(24, '{\"Model:\":\" HN144W \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Asus \",\"Năm ra mắt :\":\" 2022 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"CPU:\":\" Intel Core i5-11400H \",\"Loại CPU:\":\" 11400H \",\"Tốc độ CPU:\":\" 2.70 GHz \",\"Bộ nhớ đệm:\":\" 12 MB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(25, '{\"Model:\":\" 6K796PA \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" HP \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại CPU:\":\" Intel Core i3-1115G4 \",\"Bộ nhớ đệm:\":\" 6MB \",\"Tốc độ CPU tối đa:\":\" 4.1 GHz \",\"Loại RAM:\":\" DDR4 \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(26, '{\"Model:\":\" 617L4PA \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" HP \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" i5-1135G7 \",\"Bộ nhớ đệm:\":\" 8 MB \",\"Tốc độ CPU tối đa:\":\" up to 4.2 GHz \",\"Loại RAM:\":\" DDR4 \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(27, '{\"Model:\":\" 46M08PA \",\"Màu sắc:\":\" Vàng \",\"Nhà sản xuất:\":\" HP \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" Intel® Core™ i3-1125G4 \",\"Bộ nhớ đệm:\":\" 8 MB L3, 4 lõi, 8 luồng \",\"Tốc độ CPU tối đa:\":\" lên đến 3,7 GHz \",\"Loại RAM:\":\" DDR4 \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(28, '{\"Model:\":\" 6K788PA \",\"Màu sắc:\":\" Vàng \",\"Nhà sản xuất:\":\" HP \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" i5- 1240P \",\"Bộ nhớ đệm:\":\" 12 MB \",\"Tốc độ CPU tối đa:\":\" 4.4 GHz \",\"Loại RAM:\":\" DDR4 \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(29, '{\"Model:\":\" V4I5214W1 \",\"Màu sắc:\":\" Xám \",\"Nhà sản xuất:\":\" Dell \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" I5-11320H \",\"Loại RAM:\":\" DDR4 \",\"Dung lượng RAM:\":\" 8GB GB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(30, '{\"Model:\":\" V4R53500U003W1 \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Dell \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" R5-3500U \",\"Loại RAM:\":\" DDR4 \",\"Dung lượng RAM:\":\" 8 GB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(31, '{\"Model:\":\" YX51W5 \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Dell \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" Intel Core i5 \",\"Loại CPU:\":\" 1135G7 \",\"Loại RAM:\":\" DDR4 \",\"Dung lượng RAM:\":\" 8 GB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(32, '{\"Model:\":\" 70270645 \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Dell \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"CPU:\":\" Intel Core I5-1135G7 \",\"Loại RAM:\":\" DDR4 \",\"Dung lượng RAM:\":\" 8 GB \"}', '2022-11-07 18:19:57', '2022-11-07 18:19:57', NULL),
+(33, '{\"Model:\":\" CU/CS-N12WKH-8M \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Malaysia \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1.5 HP \",\"Tốc độ làm lạnh trung bình:\":\" 12000 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(34, '{\"Model:\":\" CU/CS-N9WKH-8M \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Malaysia \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1 HP \",\"Tốc độ làm lạnh trung bình:\":\" 9040 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(35, '{\"Model:\":\" CU/CS-VU9UKH-8 \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Malaysia \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1 HP \",\"Tốc độ làm lạnh tối thiểu:\":\" 2,860 BTU \",\"Tốc độ làm lạnh trung bình:\":\" 8,530 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(36, '{\"Model:\":\" CU/CS-XU9XKH-8 \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Malaysia \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1 HP \",\"Tốc độ làm lạnh tối thiểu:\":\" 3,140 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(37, '{\"Model:\":\" ATF25UV1V/ARF25UV1V \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Daikin \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1 HP \",\"Tốc độ làm lạnh tối thiểu:\":\" 9300 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(38, '{\"Model:\":\" ATF35UV1V/ARF35UV1V \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Daikin \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1.5 HP \",\"Tốc độ làm lạnh tối thiểu:\":\" 11100 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(39, '{\"Model:\":\" FTKA35VMVMV/RKA35VMVMV \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Daikin \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 12 tháng, Bảo hành máy nén 5 năm \",\"Công suất:\":\" 1.5 HP \",\"Công nghệ Inverter:\":\" Có \",\"Làm lạnh nhanh:\":\" Có \",\"Chế độ hẹn giờ:\":\" Có \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(40, '{\"Model:\":\" ATKC35UAVMV/ARKC35UAVMV \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Daikin \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2019 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1.5 HP \",\"Tốc độ làm lạnh tối thiểu:\":\" 4400 BTU \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(41, '{\"Model:\":\" RAS-H13C3KCVG-V \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1.5 HP \",\"Công nghệ Inverter:\":\" Có \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(42, '{\"Model:\":\" RAS-H13E2KCVG-V \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1.5 HP \",\"Công nghệ Inverter:\":\" Có \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(43, '{\"Model:\":\" RAS-H10E2KCVG-V \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy lạnh:\":\" 1 chiều \",\"Công suất:\":\" 1HP \",\"Công nghệ Inverter:\":\" Có \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(44, '{\"Model:\":\" RAS-H24E2KCVG-V \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Công suất:\":\" 2.5 \",\"Công nghệ Inverter:\":\" Có \",\"Làm lạnh nhanh:\":\" Có \",\"Khử mùi:\":\" Tự vệ sinh dàn lạnh, Công nghệ chống bám bẩn Magic coil, Bộ lọc Toshiba IAQ, Công nghệ tinh lọc không khí Plasma Ion, Bộ lọc chống nấm mốc \"}', '2022-11-07 18:25:10', '2022-11-07 18:25:10', NULL),
+(45, '{\"Model:\":\" RT20HAR8DBU/SV \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 208 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(46, '{\"Model:\":\" RS62R5001M9/SV \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2019 \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Kiểu tủ lạnh:\":\" Side by side \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 680 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(47, '{\"Model:\":\" RT22M4032BU/SV \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 236 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(48, '{\"Model:\":\" RT19M300BGS/SV \",\"Nhà sản xuất:\":\" Samsung \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 216 \",\"Dung tích sử dụng:\":\" 208 \",\"Dung tích ngăn đá:\":\" 53 lít \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(49, '{\"Model:\":\" NR-TL381GPKV \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 2 năm/ Máy nén: 12 năm \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 \",\"Dung tích tủ lạnh:\":\" 366 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(50, '{\"Model:\":\" NR-TV261APSV \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 \",\"Dung tích sử dụng:\":\" 234 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(51, '{\"Model:\":\" NR-BX471WGKV \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá dưới \",\"Số cửa tủ:\":\" 2 \",\"Dung tích tủ lạnh:\":\" 420 \",\"Dung tích ngăn đá:\":\" 112 lít \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(52, '{\"Model:\":\" NR-TL351GPKV \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Panasonic \",\"Xuất xứ:\":\" Việt Nam \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 2 năm/ Máy nén: 12 năm \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 \",\"Dung tích tủ lạnh:\":\" 326 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(53, '{\"Model:\":\" SJ-FX631V-SL \",\"Nhà sản xuất:\":\" Sharp \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Kiểu tủ lạnh:\":\" Multi doors \",\"Số cửa tủ:\":\" 4 cửa \",\"Dung tích tủ lạnh:\":\" 556 \",\"Dung tích ngăn đá:\":\" 211 lít \",\"Dung tích ngăn lạnh:\":\" 345 lít \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(54, '{\"Model:\":\" SJ-X346E-SL \",\"Màu sắc:\":\" Bạc giống thép không gỉ \",\"Nhà sản xuất:\":\" Sharp \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 342 \",\"Dung tích sử dụng:\":\" 315 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(55, '{\"Model:\":\" SJ-X281E \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" Sharp \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 253 \",\"Dung tích ngăn đá:\":\" 60 lít \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(56, '{\"Model:\":\" SJ-X196E-SL \",\"Màu sắc:\":\" Bạc giống Inox \",\"Nhà sản xuất:\":\" Sharp \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 12 Tháng \",\"Kiểu tủ lạnh:\":\" Ngăn đá trên \",\"Số cửa tủ:\":\" 2 cửa \",\"Dung tích tủ lạnh:\":\" 180 \",\"Dung tích sử dụng:\":\" 165 \"}', '2022-11-07 18:30:51', '2022-11-07 18:30:51', NULL),
+(57, '{\"Model:\":\" FV1410D4P \",\"Màu sắc:\":\" Xám \",\"Nhà sản xuất:\":\" LG \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2022 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 11 kg \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(58, '{\"Model:\":\" F2515RTGB \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" LG \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2022 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 15 kg \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(59, '{\"Model:\":\" FV1411S4P \",\"Màu sắc:\":\" Bạc \",\"Nhà sản xuất:\":\" LG \",\"Xuất xứ:\":\" Việt Nam \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 11 kg \",\"Công nghệ Inverter:\":\" SmartInverter™ \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(60, '{\"Model:\":\" F2515STGW \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" LG \",\"Xuất xứ:\":\" Trung Quốc \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 15 kg \",\"Công nghệ Inverter:\":\" Có Inverter \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(61, '{\"Model:\":\" EWF9024P5WB \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Electrolux \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 9 Kg \",\"Chế độ giặt:\":\" 15 Chương trình \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(62, '{\"Model:\":\" EWF9024P5SB \",\"Màu sắc:\":\" Xám đen \",\"Nhà sản xuất:\":\" Electrolux \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 9 Kg \",\"Chế độ giặt:\":\" 15 Chương trình \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(63, '{\"Model:\":\" EWF8024D3WB \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Electrolux \",\"Xuất xứ:\":\" Thailand \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 8 Kg \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(64, '{\"Model:\":\" EWF1024P5WB \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Electrolux \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 10 Kg \",\"Chế độ giặt:\":\" 15 Chương trình \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(65, '{\"Model:\":\" TW-BK95S2V(WK) \",\"Màu sắc:\":\" Trắng \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trước \",\"Kiểu lồng giặt:\":\" Lồng ngang \",\"Khối lượng giặt:\":\" 8.5 Kg \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(66, '{\"Model:\":\" AW-DUK1160HV(SG) \",\"Màu sắc:\":\" Xám bạc \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Trung Quốc \",\"Năm ra mắt :\":\" 2021 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trên \",\"Kiểu lồng giặt:\":\" Lồng đứng \",\"Khối lượng giặt:\":\" 10.5 kg \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(67, '{\"Model:\":\" AW-DK1000FV \",\"Màu sắc:\":\" Đen \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Năm ra mắt :\":\" 2020 \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trên \",\"Kiểu lồng giặt:\":\" Lồng đứng \",\"Khối lượng giặt:\":\" 9 Kg \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL),
+(68, '{\"Model:\":\" AW-H1000GV (SB) \",\"Nhà sản xuất:\":\" Toshiba \",\"Xuất xứ:\":\" Thái Lan \",\"Thời gian bảo hành:\":\" 24 Tháng \",\"Loại máy giặt:\":\" Cửa trên \",\"Kiểu lồng giặt:\":\" Lồng đứng \",\"Khối lượng giặt:\":\" 9 Kg \",\"Tốc độ quay vắt:\":\" 700 vòng/phút \",\"Chế độ giặt nhanh:\":\" Có \"}', '2022-11-07 18:43:47', '2022-11-07 18:43:47', NULL);
 
 -- --------------------------------------------------------
 
@@ -630,6 +697,13 @@ CREATE TABLE `user` (
   `modified_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`, `first_name`, `last_name`, `email_address`, `created_at`, `modified_at`, `deleted_at`) VALUES
+(1, 'abc', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', NULL, NULL, 'abc@xyz.com', '2022-11-06 16:14:58', '2022-11-06 16:14:58', NULL);
 
 --
 -- Indexes for dumped tables
@@ -695,7 +769,7 @@ ALTER TABLE `product_image`
 -- AUTO_INCREMENT for table `product_specs`
 --
 ALTER TABLE `product_specs`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT for table `product_tag`
@@ -707,7 +781,7 @@ ALTER TABLE `product_tag`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
