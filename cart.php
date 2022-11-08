@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'] . 'include_path.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/include_path.php');
 
 $title = 'Giỏ hàng';
 $template = DIR_VIEWS . 'cart.tmpl.php';
