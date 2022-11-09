@@ -2,10 +2,10 @@
 require_once(DIR_MODULES . 'helpers.php');
 ?>
 
-<section class="container mt-4 w-25">
+<section class="container-fluid mt-4">
     <?php include_once(DIR_VIEWS . 'msg.php'); ?>
 
-    <form action="/controllers/register.ctl.php" method="POST">
+    <form class="row justify-content-center mx-auto" style="max-width: 40%;" action="/controllers/register.ctl.php" method="POST">
         <div class="mb-3">
             <label class="form-label">Username <span class="text-danger fw-bold">*</span></label>
             <input type="text" class="form-control" name="username" value="<?php echo getURLParameter('username') ?>">
