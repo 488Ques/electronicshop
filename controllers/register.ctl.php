@@ -33,6 +33,15 @@ if (!empties($username, $password, $email_address)) {
             $userModel->insert($username, $password, $first_name, $last_name, $email_address);
             header('Location: /register.php?msg=done');
         }
+    } else {
+        $loc = sprintf(
+            'Location: /register.php?msg=invalid&username=%s&first_name=%s&last_name=%s&email_address=%s',
+            $username,
+            $first_name,
+            $last_name,
+            $email_address
+        );
+        header($loc);
     }
 } else {
     $loc = sprintf(
